@@ -38,5 +38,9 @@ steps:-
      5. open c:drive --> inetpub-->wwwroot = C:\inetpub\wwwroot file this.
      6. create one folder name APP2 and paste project all folders
      7. access via public-ip:80/app2
+    
+     Example: bellow Diagram
 
+      ![Alt text](image.png)
+      
 3. Create An Images From Testing Servers

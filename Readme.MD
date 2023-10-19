@@ -78,5 +78,11 @@ steps:-
        Tag:- key: Name  Value: Service1-From-app2
 
 4. Launch Configuration
+5. Target Group
+6. Auto scaling
+7. LoadBalancer
+8. Global Accelerator 
+9. Cloud Watch
+10. SES
    
    

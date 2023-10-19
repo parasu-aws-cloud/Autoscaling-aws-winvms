@@ -71,9 +71,9 @@ steps:-
 
     go to console: when Click on create-image fronm app2
       
-       Image name: APP1
+       Image name: APP2
        
-       Image description : Used For App-01
+       Image description : Used For App-02
 
-       Tag:- key: Name  Value: Service1-From-app1
+       Tag:- key: Name  Value: Service1-From-app2
     

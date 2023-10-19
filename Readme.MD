@@ -17,7 +17,7 @@ Launch Configuration :-
 * MYAMI + H/W
 
 steps:-
-1. create Vpc in london region with sg tcp linux protocol=ssh port 22,windows protocol=rdp port=3389,http tcp custom rules
+1. create Vpc in london region with sg tcp linux protocol=ssh port 22,windows protocol=rdp port=3389,tcp protocol=http  port 80       custom  rules
 2. Create Two Testing Servers app1,app2
    * Download remote desktop file and install and open server1
      1. Computer : Host-ip 
@@ -76,4 +76,7 @@ steps:-
        Image description : Used For App-02
 
        Tag:- key: Name  Value: Service1-From-app2
-    
+
+4. Launch Configuration
+   
+   

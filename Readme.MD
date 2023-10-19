@@ -17,6 +17,26 @@ Launch Configuration :-
 * MYAMI + H/W
 
 steps:-
-1. create Vpc in london region with sg ssh,rdp,http tcp custom rules
+1. create Vpc in london region with sg tcp linux protocol=ssh port 22,windows protocol=rdp port=3389,http tcp custom rules
 2. Create Two Testing Servers app1,app2
+   * Download remote desktop file and install and open server1
+     1. Computer : Host-ip 
+     2. Username: Administrator
+     3. Password:***** or upload private key file and click dycript then we'll get password
+     4. click on windows icon and click on server-manager option and on the console Dashboard--> click on add-roles and features
+        -->3 times click Next button and select IIS-WEB_SERVER and click Next --> click install-button and wait untill it will finish. and --> click close-button.
+     5. open c:drive --> inetpub-->wwwroot = C:\inetpub\wwwroot file this.
+     6. create one folder name APP1 and paste project all folders
+     7. access via public-ip:80/app1
+
+   * Download remote desktop file and install and open server1
+     1. Computer : Host-ip 
+     2. Username: Administrator
+     3. Password:***** or upload private key file and click dycript then we'll get password
+     4. click on windows icon and click on server-manager option and on the console Dashboard--> click on add-roles and features
+        -->3 times click Next button and select IIS-WEB_SERVER and click Next --> click install-button and wait untill it will finish. and --> click close-button.
+     5. open c:drive --> inetpub-->wwwroot = C:\inetpub\wwwroot file this.
+     6. create one folder name APP2 and paste project all folders
+     7. access via public-ip:80/app2
+     
 3. Create An Images From Testing Servers

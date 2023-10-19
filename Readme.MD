@@ -49,7 +49,7 @@ steps:-
      
      * MYAMI is Nothing but combination of OS + Volume like this MYAMI=OS+vulume
 
-    follaow diagram:-
+    follow diagram:-
 
       ![Alt text](image-from-app1.png) 
 
@@ -63,12 +63,12 @@ steps:-
 
        Tag:- key: Name  Value: Service1-From-app1
     
-    follaow diagram:-
+    follow diagram:-
 
       ![Alt text](image-from-app2.png)
 
     steps:
-    
+
     go to console: when Click on create-image fronm app2
       
        Image name: APP1

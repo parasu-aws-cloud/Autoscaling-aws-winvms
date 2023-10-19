@@ -34,9 +34,9 @@ steps:-
      2. Username: Administrator
      3. Password:***** or upload private key file and click dycript then we'll get password
      4. click on windows icon and click on server-manager option and on the console Dashboard--> click on add-roles and features
-        -->3 times click Next button and select IIS-WEB_SERVER and click Next --> click install-button and wait untill it will finish. and --> click close-button.
+        -->3 times click Next button and select IIS-WEB-SERVER and click add-features and click Next 4 times --> click install-button and wait untill it will finish. and --> click close-button.
      5. open c:drive --> inetpub-->wwwroot = C:\inetpub\wwwroot file this.
      6. create one folder name APP2 and paste project all folders
      7. access via public-ip:80/app2
-     
+
 3. Create An Images From Testing Servers

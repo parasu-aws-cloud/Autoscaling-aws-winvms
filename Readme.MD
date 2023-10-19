@@ -29,7 +29,7 @@ steps:-
      6. create one folder name APP1 and paste project all folders
      7. access via public-ip:80/app1
 
-   * Download remote desktop file and install and open server1
+   * Download remote desktop file and install and open server2
      1. Computer : Host-ip 
      2. Username: Administrator
      3. Password:***** or upload private key file and click dycript then we'll get password

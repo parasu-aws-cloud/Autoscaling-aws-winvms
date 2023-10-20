@@ -226,8 +226,245 @@ steps:-
           Health check path : /path2 
 
           and click NEXT-BUTTON then click CREATE-TARGET-GROUP
+
+6. Auto-scaling
+      
+      ### lets create Autos caling group for APP1
+
+       go auto scaling group console 
+         
+         1. Choose launch template or configuration
+           
+           Name:
+           Auto Scaling group name: APP1
+
+           note: here two options available launch template and launch configuration i have created launch configuration so go with lc.
+                 click on switch to launch configuration.
+           
+           Launch configuration: [select] APP1
+
+           and click next-button
+         
+         2. Choose instance launch options
           
-6. Auto scaling
+           Network:
+           
+           VPC: which i have created vpc
+           
+           Availability Zones and subnets: which i have created all subnets selected.
+
+           and click next-button.
+         
+         3. Configure advanced options - optional
+          
+            Load balancing:
+
+            [select] Attach to an existing load balance
+
+            Attach to an existing load balancer: [select] Choose from your load balancer target groups
+
+            Existing load balancer target groups : [select] APP1|HTTP
+
+            Health checks:
+            
+            EC2 health checks : Always enable
+
+            Additional health check types - optional : no need
+
+            Health check grace period : 300 seconds
+
+            Additional settings:
+
+            Monitoring: [select] Enable group metrics collection within CloudWatch.
+
+            and click on next-button.
+
+         4. Configure group size and scaling policies - optional 
+
+           Group size - optional : it is very importent
+           -----
+           Desired capacity : 1
+
+           Minimum capacity : 1
+
+           Maximum capacity : 2
+
+           Scaling policies - optional
+           ----------------
+
+           [select] Target tracking scaling policy
+
+           Scaling policy name : Target Tracking Policy
+
+           Metric type : Average CPU utilization
+
+           Target value : 50
+
+           Instance warmup : 300 seconds
+
+           Instance scale-in protection - optional
+           ---------------------------
+
+           Instance scale-in protection: [select] Enable instance scale-in protection
+
+           and click next-button
+
+         5. Add notifications - optional
+
+            click on ADD notification button
+
+          go to SNS console and click on create topic button
+            
+             Notification 1
+             --------------
+
+             Send a notification to : autoscaling
+
+             With these recipients : koppada.parasuk@gmail.com
+
+             Event types: [select] Launch
+                          [select] Terminate
+                          [select] fail to Launch
+                          [select] fail to terminate
+             
+             and click on next-button
+         
+         6. Add tags - optional
+             
+             Tags:
+             ----
+
+             key : Name    Value: APP1
+
+             and click next-button
+         
+         Note: check and finalize click on create auto scaling group
+
+      ### lets create Autos caling group for APP1
+
+       go auto scaling group console 
+         
+         1. Choose launch template or configuration
+           
+           Name:
+           Auto Scaling group name: APP2
+
+           note: here two options available launch template and launch configuration i have created launch configuration so go with lc.
+                 click on switch to launch configuration.
+           
+           Launch configuration: [select] APP2
+
+           and click next-button
+         
+         2. Choose instance launch options
+          
+           Network:
+           
+           VPC: which i have created vpc
+           
+           Availability Zones and subnets: which i have created all subnets selected.
+
+           and click next-button.
+         
+         3. Configure advanced options - optional
+          
+            Load balancing:
+
+            [select] Attach to an existing load balance
+
+            Attach to an existing load balancer: [select] Choose from your load balancer target groups
+
+            Existing load balancer target groups : [select] APP2|HTTP
+
+            Health checks:
+            
+            EC2 health checks : Always enable
+
+            Additional health check types - optional : no need
+
+            Health check grace period : 300 seconds
+
+            Additional settings:
+
+            Monitoring: [select] Enable group metrics collection within CloudWatch.
+
+            and click on next-button.
+
+         4. Configure group size and scaling policies - optional 
+
+           Group size - optional : it is very importent
+           -----
+           Desired capacity : 1
+
+           Minimum capacity : 1
+
+           Maximum capacity : 2
+
+           Scaling policies - optional
+           ----------------
+
+           [select] Target tracking scaling policy
+
+           Scaling policy name : Target Tracking Policy
+
+           Metric type : Average CPU utilization
+
+           Target value : 50
+
+           Instance warmup : 300 seconds
+
+           Instance scale-in protection - optional
+           ---------------------------
+
+           Instance scale-in protection: [select] Enable instance scale-in protection
+
+           and click next-button
+
+         5. Add notifications - optional
+
+            click on ADD notification button
+
+          go to SNS console and click on create topic button
+            
+             Notification 1
+             --------------
+
+             Send a notification to : autoscaling
+
+             With these recipients : koppada.parasu@gmail.com
+
+             Event types: [select] Launch
+                          [select] Terminate
+                          [select] fail to Launch
+                          [select] fail to terminate
+             
+             and click on next-button
+         
+         6. Add tags - optional
+             
+             Tags:
+             ----
+
+             key : Name    Value: APP2
+
+             and click next-button
+         
+         Note: check and finalize click on create auto scaling group
+
+         
+      
+
+
+            
+
+
+
+
+
+
+              
+
+     
 7. LoadBalancer
 8. Global Accelerator 
 9. Cloud Watch

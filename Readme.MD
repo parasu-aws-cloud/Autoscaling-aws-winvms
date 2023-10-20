@@ -94,7 +94,7 @@ steps:-
         
          * purchasing option: if you want any spot instances should anable
 
-         * IAM instance profile: it is very importent when capture ec2 applicatiion logs and network logs and cpu metrics ,memory metrics then pushed to s3 bucket. it that cause we can write shell or python scripts and monitor the logs. for we create IAM role for that then place here.
+         * IAM instance profile: it is very importent when capture ec2 applicatiion logs and network logs and cpu metrics ,memory metrics then pushed to s3 bucket. in that cause we can write shell or python scripts and monitor the logs. for that we have to create IAM role and  then place here.
 
          *  monitoring :
             
@@ -139,7 +139,7 @@ steps:-
         
          * purchasing option: if you want any spot instances should anable
 
-         * IAM instance profile: it is very importent when capture ec2 applicatiion logs and network logs and cpu metrics ,memory metrics then pushed to s3 bucket. it that cause we can write shell or python scripts and monitor the logs. for we create IAM role for that then place here.
+         * IAM instance profile: it is very importent when capture ec2 applicatiion logs and network logs and cpu metrics ,memory metrics then pushed to s3 bucket. in that cause we can write shell or python scripts and monitor the logs. for that we have to create IAM role and  then place here.
 
          *  monitoring :
             

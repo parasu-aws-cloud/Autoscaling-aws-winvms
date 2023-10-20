@@ -169,7 +169,64 @@ steps:-
 
          existing key pair : which one you have already in this region.   
           
-5. Target Group
+5. Target Group For APP1,APP2
+   
+   ### FOR APP1 Target-group
+
+    go to target group console:
+      
+      Specify group details :
+
+        * Basic configuration:
+         
+          Choose a target type: [select]
+
+          Target group name: APP1
+
+          Protocol : http and port : 80
+
+          IP address type : [select] IPv4
+
+          VPC : select which we have created vpc
+
+          Protocol version: select HTTP1
+        
+        * Health checks :
+
+          Health check protocol : HTTP
+
+          Health check path : /path1 
+
+          and click NEXT-BUTTON then click CREATE-TARGET-GROUP
+   
+   ### FOR APP2 Target-group
+
+    go to target group console:
+      
+      Specify group details :
+
+        * Basic configuration:
+         
+          Choose a target type: [select]
+
+          Target group name: APP1
+
+          Protocol : http and port : 80
+
+          IP address type : [select] IPv4
+
+          VPC : select which we have created vpc
+
+          Protocol version: select HTTP1
+        
+        * Health checks :
+
+          Health check protocol : HTTP
+
+          Health check path : /path2 
+
+          and click NEXT-BUTTON then click CREATE-TARGET-GROUP
+          
 6. Auto scaling
 7. LoadBalancer
 8. Global Accelerator 

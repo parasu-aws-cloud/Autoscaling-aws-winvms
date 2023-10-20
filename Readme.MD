@@ -77,7 +77,51 @@ steps:-
 
        Tag:- key: Name  Value: Service1-From-app2
 
-4. Launch Configuration
+4. Launch Configuration :-
+   
+    go to Launch configuration console : configure all bellow things
+     
+      Launch configuration name : APP1
+        ![Alt text](myami.png)
+        
+      Amazon Michine Image : this AMI which we have created (AMI name: APP1)
+
+      Instance Type : m4.large
+
+      Additional configuration: (optional)
+        
+         * purchasing option: if you want any spot instances should anable
+
+         * IAM instance profile: it is very importent when capture ec2 applicatiion logs and network logs and cpu metrics ,memory metrics then pushed to s3 bucket. it that cause we can write shell or python scripts and monitor the logs. for we create IAM role for that then place here.
+
+         *  monitoring :
+            
+            [*] Enable EC2 instance detailed monitoring within CloudWatch.
+
+         * EBS-optimized instance
+
+            [*] Launch as EBS-optimized instance
+         
+         * Advance Details :
+
+            user data: if we want any customization
+
+      Storage (volumes) :
+
+         * EBS volumes: if we want add.
+
+      Security groups :
+
+         Assign a security group : Select an existing security group.
+
+      ![Alt text](sg-for-app1.png)
+
+      Key pair (login) :
+
+         Key pair options : Choose an existing key pair.
+
+         existing key pair : which one you have already in this region. 
+            
 5. Target Group
 6. Auto scaling
 7. LoadBalancer

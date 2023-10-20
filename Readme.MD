@@ -450,22 +450,52 @@ steps:-
              and click next-button
          
          Note: check and finalize click on create auto scaling group
-
-         
-      
-
-
-            
-
-
-
-
-
-
-              
-
      
 7. LoadBalancer
+   
+   ### Create Application Load Balancer
+     
+         1. Basic configuration:
+
+           Load balancer name : ALB
+           
+           Scheme: [select] internet-facing
+
+           IP address type : [select] IPv4
+
+         2. Network mapping
+           
+           VPC : which i have created
+
+           Mappings : select all subnets
+
+         3. Security groups
+
+           Security groups : select which i have created
+         
+         4. Listeners and routing
+          
+           ListenerHTTP:80
+           ---------------
+           protocol : HTTP  port : 80    Default action : APP1
+
+         5. Add-on services - optional
+
+           AWS Global Accelerator : [select]
+
+           Accelerator name : ALB-GA
+
+         6. Load balancer tags - optional
+           
+           key : Name   Value : ALB
+
+         7. Summary : check once all Summary of ALB
+
+            and click create load balancer
+         
+
+
+ 
 8. Global Accelerator 
 9. Cloud Watch
 10. SES

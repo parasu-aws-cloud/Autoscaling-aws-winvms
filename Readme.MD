@@ -493,11 +493,40 @@ steps:-
 
             and click create load balancer
          
+         8. go to ALB [select] and get option (Listeners and rules).
+           
+            click on (Edit listener)
 
+            Listener configuration section :
 
- 
-8. Global Accelerator 
+              Protocol : HTTP   port : 80
+
+            Default actions:
+            
+            Routing actions
+
+            [select] Forward to target group  
+            
+               Target group: APP1        weight:1     percent: 50%
+
+               Target group: APP2        weight:1     percent: 50%
+
+            click on (save changes)
+
+8. Global Accelerator
+    
+   ### Add-on services - optional
+
+           AWS Global Accelerator : [select]
+
+           Accelerator name : ALB-GA 
+
 9. Cloud Watch
 10. SES
+
+11. access two applications APP1 and APP2
+
+   [1] - http://alb-1645787632.eu-west-2.elb.amazonaws.com/app1
    
+   [2] - http://alb-1645787632.eu-west-2.elb.amazonaws.com/app2
    
